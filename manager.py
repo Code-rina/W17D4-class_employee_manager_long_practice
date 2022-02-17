@@ -5,10 +5,10 @@ class Manager(Employee):
         super().__init__(name, title, salary, boss)
         self.employees = [];
 
-    def add_employee(self, employee, employees):
-        employees.append(employee)
+    def add_employee(self, employee):
+        self.employees.append(employee)
 
-annie = Manager('Annie', 'Director', 100000, 'Alvy', 'Gina')
+annie = Manager('Annie', 'Director', 100000, None, None)
+alvy = Employee('Alvy', 'Analyst', 75000, 'Annie', None)
 print(annie.employees)
-alvy = Employee('Alvy', 'Analyst', 75000, 'Mark', 'Annie')
-print(alvy.employees)
+# print(alvy.employees)
