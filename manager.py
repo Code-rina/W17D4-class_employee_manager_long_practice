@@ -11,7 +11,5 @@ class Manager(Employee):
 
 annie = Manager('Annie', 'Director', 100000, None)
 alvy = Employee('Alvy', 'Analyst', 75000, annie)
-# print(annie.add_employee(alvy))
+
 print(annie.employees)
-# annie.add_employee()
-# print(alvy.employees)
