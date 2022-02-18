@@ -10,3 +10,5 @@ class Employee:
 
     def bonus(self, multiplier):
         return self.salary * multiplier
+
+         
