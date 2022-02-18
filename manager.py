@@ -26,4 +26,5 @@ class Manager(Employee):
                 sum += employee.salary
         return sum
 
-    
+    def bonus(self, multiplier):
+        return (self.salary + self.bonus_calculator()) * multiplier

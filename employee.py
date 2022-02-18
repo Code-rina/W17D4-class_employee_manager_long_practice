@@ -9,4 +9,4 @@ class Employee:
             self.boss.add_employee(self)
 
     def bonus(self, multiplier):
-        return self.salary + multiplier
+        return self.salary * multiplier
