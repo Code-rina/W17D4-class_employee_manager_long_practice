@@ -5,4 +5,5 @@ class Employee:
         self.salary = salary
         self.boss = boss
 
-        
+        if boss:
+            self.boss.add_employee(self)
